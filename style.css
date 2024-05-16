@@ -1,0 +1,161 @@
+body {
+    background-color: #2F3B5B;
+}
+
+img {
+    border-radius: 40px;
+}
+
+.topnav {
+    background-color: #B0BF8F;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.topnav a {
+    float: left;
+    color: #F2F2F2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: "Poetsen One", sans-serif;
+    font-size: 1.5rem;
+}
+
+.topnav a:hover {
+    background-color: #828f67;
+    color: #0D0D0D;
+}
+
+.topnav a.active {
+    background-color: #D9D0C7;
+    color: #0D0D0D;
+}
+
+.title {
+    text-align: center;
+    background-color: #D9D0C7;
+    padding: 20px;
+    border: 3px solid #DBBC6B;
+    border-radius: 40px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+h1 {
+    font-family: "Poetsen One", sans-serif;
+    font-size: 6rem;
+    color: #B0BF8F;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #828f67;
+    text-align: center;
+    margin-top: 10px;
+}
+
+h2 {
+    font-family: "Poetsen One", sans-serif;
+    font-size: 3rem;
+    color: #2F3B5B;
+    -webkit-text-stroke-color: #D9D0C7;
+    -webkit-text-stroke-width: 0.5px;
+    text-align: center;
+}
+
+p {
+    font-family: "Poetsen One", sans-serif;
+    font-size: 1.5rem;
+    text-align: justify;
+    margin: 20px;
+}
+
+.quote {
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer {
+    background-color: #D9D0C7;
+    border-radius: 40px;
+    border: 3px solid #DBBC6B;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer p {
+    margin: 10px;
+}
+
+.footer a {
+    font-size: 1.5rem;
+    margin: 20px;
+}
+
+
+@media (max-width: 360px) { 
+    .body {
+        width: 80%;
+        margin: 10px auto;
+        background-image: linear-gradient(#D9D0C7, #B0BF8F);
+        padding: 10px;
+    }
+    
+    h1 {
+        font-size: 2rem;
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    img {
+        width: 80px; 
+    }
+}
+
+@media (min-width: 361px) { 
+    .body {
+        width: 85%;
+        margin: 10px auto;
+        background-image: linear-gradient(#D9D0C7, #B0BF8F);
+        padding: 20px;
+    }
+
+    .topnav {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .title {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    h1 {
+        width: 100%; 
+        margin: 10px auto; 
+    }
+
+    p {
+        width: 100%;
+        margin: 10px auto;
+    }
+
+    .footer {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .footer p {
+        text-align: center;
+    }
+
+    img {
+        width: 100px; 
+    }
+
+    .img2 {
+        margin-left: 20px; 
+    }
+}

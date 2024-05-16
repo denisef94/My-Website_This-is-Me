@@ -1,0 +1,278 @@
+/*
+
+#2C4001 - dunkelgrün
+#738C16 - hellgrün
+#B9BF88 - beige
+#D9D3C1 - gelb-beige
+#D9ABA0 - pink
+
+#2B3A8C - dunkelblau
+#535FA6 - hellblau
+#A9B9D9 - sehr helles blau
+#B0BF8F - hellgrün
+#D9D0C7 - hellrosa
+
+#6B89DB - mittleres blau
+#DBBC6B - dunkleres gelb
+#0D0D0D - dunkelgrau
+
+*/
+
+.topnav {
+    background-color: #B0BF8F;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.poetsen-one-regular {
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }  
+
+.jobs {
+    background-image: linear-gradient(#D9D0C7, #B0BF8F);
+    padding: 0px 10px 10px 10px;
+    border: 5px solid #0D0D0D;
+    border-radius: 30px;
+}
+
+.jobs > p {
+    font-family: "Poetsen One", "sans-serif";
+    font-size: 1.5rem;
+}
+
+.jobs  table  tr  th {
+    font-size: 1rem;
+    font-family: "Poetsen One", sans-serif;
+    text-align: left;
+    padding-right: 30px;
+    width: 300px;
+}
+
+.edu {
+    background-image: linear-gradient(#B0BF8F, #D9D0C7);
+    border: 5px solid #0D0D0D;
+    border-radius: 30px;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.education {
+    font-family: "Poetsen One", sans-serif;
+    font-size: 1.5rem;
+    color: #0D0D0D;
+}
+
+.edu th {
+    font-size: 1.3rem;
+    padding-bottom: 10px;
+    color: #0D0D0D;
+    font-family: "Poetsen One", sans-serif;
+    text-align: left;
+}
+
+.edu td {
+    width: 250px;
+    color: #0D0D0D;
+    font-family: "Poetsen One", sans-serif;
+    font-size: 1rem;
+    text-align: left;
+}
+
+.langu {
+    background-image: linear-gradient(#D9D0C7, #B0BF8F);
+    border: 5px solid #0D0D0D;
+    border-radius: 30px;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.languages {
+    font-family: "Poetsen One", sans-serif;
+    font-size: 1.5rem;
+    color: #0D0D0D;
+}
+
+.langu ul li, .character, .tech {
+    font-family: "Poetsen One", sans-serif;
+    list-style: none;
+    font-size: 1rem;
+}
+
+.programLang, .char, .it {
+    color: #0D0D0D;
+    font-family: "Poetsen One", sans-serif;
+    font-size: 1.5rem;
+}
+
+.prLang, .characteristics, .skills {
+    background-image: linear-gradient(#B0BF8F, #D9D0C7);
+    border: 5px solid #0D0D0D;
+    border-radius: 30px;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.programmingLang, .character, .tech {
+    display: grid;
+}
+
+.programmingLang {
+    list-style: none;
+    font-family: "Poetsen One", sans-serif;
+}
+
+@media (max-width: 430px) {
+    body {
+        background-color: #2F3B5B;
+    }
+
+    .title .center {
+        width: 70%;
+        margin-left: 50px;
+        margin-top: 20px;
+        margin-bottom: -20px;
+        position: static;
+        order: 0;
+    }
+
+    .foto {
+        width: 55%;
+        margin-top: -110px;
+        margin-left: 65px;
+        position: static;
+        order: 2;
+    }
+
+    h1 {
+        margin-top: 20px;
+        order: 3;
+    }
+
+    .topnav a {
+        float: left;
+        color: #F2F2F2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-family: "Poetsen One", sans-serif;
+        font-size: 15px;
+    }
+
+    .topnav a:hover {
+        background-color: #828f67;
+        color: #0D0D0D;
+    }
+
+    .topnav a.active {
+        background-color: #D9D0C7;
+        color: #0D0D0D;
+    }
+
+    h1 {
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #F2F2F2;
+        color: #86806F;
+        font-size: 3rem;
+        text-align: center;
+        padding-top: -30px;
+        order: 3;
+      }
+
+      .programmingLang, .character, .tech {
+        grid-template-columns: auto;
+    }
+}
+
+@media (min-width: 431px) and (max-width: 1920px) {
+    body {
+        background-color: #2F3B5B;
+    }
+
+    .title {
+        text-align: center;
+    }
+
+    .title .center {
+        width: 25%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        margin-bottom: -20px;
+        position: static;
+        flex: 1;
+        order: 0;
+    }
+
+    .foto {
+        width: 55%;
+        margin-top: -110px;
+        margin-left: 65px;
+        position: static;
+        order: 2;
+    }
+
+    h1 {
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #F2F2F2;
+        color: #B0BF8F;
+        font-size: 4rem;
+        text-align: center;
+        padding-top: -30px;
+        flex: 1;
+        order: 3;
+      }
+
+    .topnav a {
+        float: left;
+        color: #F2F2F2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-family: "Poetsen One", sans-serif;
+        font-size: 25px;
+    }
+
+    .topnav a:hover {
+        background-color: #828f67;
+        color: #0D0D0D;
+    }
+
+    .topnav a.active {
+        background-color: #D9D0C7;
+        color: #0D0D0D;
+    }
+
+    .jobs > p, .education, .languages, .prLang .programLang, .prLang .char, .prLang .it {
+        font-family: "Poetsen One", sans-serif;
+        font-size: 2rem;
+    }
+
+    li, .jobs  table  tr  th, .edu td, .langu ul li {
+        font-family: "Poetsen One", sans-serif;
+        font-size: 1.5rem;
+        width: 900px;
+    }
+
+    .programmingLang {
+        list-style: none;
+        display: grid;
+        grid-template-rows: repeat(3, 50px);
+        grid-template-columns: repeat(2, 500px);
+    }
+    
+    .character {
+        list-style: none;
+        display: grid;
+        grid-template-rows: repeat(4, 50px);
+        grid-template-columns: repeat(2, 500px);
+    } 
+    
+    .tech {
+        list-style: none;
+        display: grid;
+        grid-template-rows: repeat(6, 50px);
+        grid-template-columns: repeat(2, 530px);
+    }
+}
