@@ -185,7 +185,7 @@
     }
 }
 
-@media (min-width: 431px) and (max-width: 1920px) {
+@media (min-width: 431px) {
     body {
         background-color: #2F3B5B;
     }
