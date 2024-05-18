@@ -7,6 +7,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="./hobby.css">
 </head>
 <body>
@@ -18,8 +21,8 @@
     <div class="title">
         <h1>Meine Hobbys, meine Leidenschaft</h1>
     </div>
-    <div class="body">
-        <h2>Schreiben</h2>
+    <div class="writing_cover">
+        <h2 class="writing-h2">Schreiben</h2>
         <p class="writing">Ich schreibe seit meinem zwölften Lebensjahr an diversen Romanen.
             Damals begann ich mit einer Fantasy-Reihe, von der ich bereits die ersten drei Teile
             auf <span>Amazon KDP</span> publiziert habe. Mittlerweile habe ich um die fünfzehn Bücher mit jeweils
@@ -34,13 +37,11 @@
             <li>Science Fiction-</li>
             <li>Gesellschaftskritischen</li>
         </ul>
-        <p class="writing">Romanen. Mir ist es wichtig, dass ich meine persönlichen Empfindungen 
+        <p class="writing2">Romanen. Mir ist es wichtig, dass ich meine persönlichen Empfindungen 
             unverblühmt in meine Bücher einbinde. Neben dem Schreiben der Geschichten, widme ich mich 
             einem weiteren Hobby.
         </p> 
-    </div>
-    <div class="body2">
-        <h2>Cover erstellen</h2>
+        <h2 class="cover-h2">Cover erstellen</h2>
         <p class="coverdesign">Jedes Buch benötigt ein gutes Cover. Nachdem ich die ersten beiden 
             Cover erstellen ließ, kam ich auf die Idee es selbst zu versuchen und siehe da, es hat
             wunderbar funktioniert und hat zudem großen Spaß gemacht. Meine Cover erstelle ich mit 
@@ -48,13 +49,60 @@
             Bei den Covers lege ich großen Wert auf das Optische, welches zugleich die Stimmung des 
             Romans widerspiegeln soll. Wenn ich nicht schreibe oder Cover entwerfe, dann programmiere ich. 
         </p>
-        <div class="images">
-            <img src="../assets/images/Aenigmalia3_v2.png" alt="Aenigmalia 3" width="400px">
-            <img src="../assets/images/Leona1.jpg" alt="Leona 1" width="400px">
-            <img src="../assets/images/TotalitäresSystemCover.jpg" alt="Totalitäres System" width="400px">
-            <img src="../assets/images/Seelenverwandtschaft einmal anders.jpg" alt="Seelenverwandtschaft einmal anders" width="400px">
-        </div>
     </div>
+    <nav>
+        <button type="button" onclick="toggleChevron(this)" id="button" class="btn btn-default">Meine Werke
+        <span class="glyphicon glyphicon-chevron-right"></span></button>
+        <ul id="nav">
+            <li>
+                <div class="writing_cover">
+                    <img src="../assets/images/Aenigmalia3_v2.png" alt="Aenigmalia 3" width="400px" class="aenigmalia-img">
+                    <p class="aenigmalia">Meine erste Buchreihe - Aenigmalia - handelt von einer jungen Frau namens Alex, 
+                        die mit ihrem älteren Bruder Chris und ihren Eltern in einen abgeschiedenen Ort von Papua Neuguinea
+                        zieht. Alles ist harmonisch und friedlich, bis den Familienvater eines Tages ein Eilbrief erreicht, 
+                        der ihn wegen eines tobenden 'Tieres' nach Australien ruft. Dieses 'Tier' und dieser Brief verändern 
+                        Alex' Leben drastisch. <br> Aenigmalia ist eine Geschichte voller Emotionen, Mythen, Dramen und 
+                        Abenteuer. Im Laufe der derzeit 13 Bänder lernt sie viele gute Freunde kennen, die allesamt ihre 
+                        eigene Geschichte erzählen können. Feinde werden mitunter zu Freunden, Freunde zu Feinden. Alex 
+                        wird mit Magie und Legenden konfrontiert und muss sich nach und nach zurechtfinden um zu überleben.
+                    </p>
+                    <img src="../assets/images/Leona1.jpg" alt="Leona 1" width="400px" class="leona-img">
+                    <p class="leona">Leona handelt - wie es der Name schon verrät - von einem jungen Mädchen desselben Namens. 
+                        Die Geschichte spielt im 12. Jahrhundert in einem korrupten und nicht vertrauenswürdigen Königreich namens 
+                        Solacien, welches in West- und Ostsolacien getrennt ist. Die beiden Könige, welche über jeweils einen Teil 
+                        des Landes herrschen, sind seit Generationen miteinander verfeindet. Als einer der Prinzen aus Ostsolacien
+                        verschwindet, erklärt der König und Vater des Prinzen seinem Rivalen letztlich den Krieg. Leona wird in all
+                        das Chaos hineingeworfen und muss um jedes Recht kämpfen, auch wenn dieser Kampf ohne Verbündete sehr schwer 
+                        sein wird. 
+                    </p>
+                    <img src="../assets/images/TotalitäresSystemCover.jpg" alt="Totalitäres System" width="400px" class="system-img">
+                    <p class="system">Das Totalitäre System spielt in der Zukunft, um genau zu sein, über 600 Jahre 
+                        nach dem Beginn der neuen Weltordnung. Religion und Loyalität gegenüber dem System sind für die Bewohner das 
+                        Wichtigste. Wer nicht loyal ist, verschwindet. Was ist damit gemeint? Nun, mithilfe eines bestimmten Gerätes kann 
+                        der Körper und auch der Geist des Betroffenen digitalisiert werden. Jeder, der eine eigene Meinung entwickelt hat, 
+                        die gegen das System geht, wird digitalisiert und somit aus der Welt geschafft. Denn das System ist gut und 
+                        beschützt die Menschheit vor sich selbst. Oder? 
+                    </p>
+                    <img src="../assets/images/Seelenverwandtschaft einmal anders.jpg" alt="Seelenverwandtschaft einmal anders" width="400px" class="seelenverwandtschaft-img">
+                    <p class="seelenverwandtschaft">Eines meiner gelungenen Experimente war ein herzzerreißender Liebesroman der anderen Art. 
+                        Es beginnt damit, dass der Protagonist, Kojiro Kurai, seine Verlobte bei einem schrecklichen Autounfall verliert. Er 
+                        gerät aufgrund seiner Trauer immer mehr in einen Teufelskreislauf, bestehend aus Alkohol, Schlägereien und noch Schlimmeres. 
+                        Dies missfällt seiner Familie freilich, schließlich ist sein Vater der Premierminister Japans und all seine Brüder hohe Tiere 
+                        in ihren Tätigkeiten. Nur Kojiro fällt in ein immer tiefer werdendes Loch, bis eines Tages jemand in sein Leben tritt. 
+                        Dennoch hat der Protagonist ein großes Problem damit sich einer Person zu öffnen und sich neuen romantischen Gefühlen hinzugeben. 
+                        Der Tod seiner Verlobten wiegt schwer und begleitet ihn ständig. Ob er es dennoch schaffen wird, die Person in sein Leben zu lassen 
+                        und zu akzeptieren? 
+                    </p>
+                    <div class="images">
+                        <img src="../assets/images/Aenigmalia3_v2.png" alt="Aenigmalia 3" width="400px">
+                        <img src="../assets/images/Leona1.jpg" alt="Leona 1" width="400px">
+                        <img src="../assets/images/TotalitäresSystemCover.jpg" alt="Totalitäres System" width="400px">
+                        <img src="../assets/images/Seelenverwandtschaft einmal anders.jpg" alt="Seelenverwandtschaft einmal anders" width="400px">
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </nav>
     <div class="body">
         <h2>Programmieren</h2>
         <p class="programming">Vor ungefähr sechs Jahren habe ich begonnen programmieren zu lernen. Damals 
@@ -65,5 +113,6 @@
         </p>
         <video src="../Hobbys/Videos/Projekt - 2D_RPG_Unity.mp4" controls></video>
     </div>
+    <script src="./hobby.js"></script>
 </body>
 </html>
